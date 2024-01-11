@@ -8,7 +8,7 @@ namespace organizacion_personal.modelos
     public class ApiResponse
     {
         public string Mensaje { get; set; }
-        public List<actividad_diaria> actividadesDiarias { get; set; }
-        public actividad_diaria actividadDiaria { get; set; }
+        public List<actividad_diaria> actividades_diarias { get; set; }
+        public actividad_diaria actividad_diaria { get; set; }
     }
 }

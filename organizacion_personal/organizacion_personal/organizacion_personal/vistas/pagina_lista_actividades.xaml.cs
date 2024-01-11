@@ -16,6 +16,7 @@ namespace organizacion_personal.vistas
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class pagina_lista_actividades : ContentPage
 	{
+        public usuario Usuario;
         public ObservableCollection<actividad_diaria> Actividades_Diarias { get; set; }
 
         public pagina_lista_actividades (usuario usuario)
@@ -23,6 +24,7 @@ namespace organizacion_personal.vistas
 			InitializeComponent ();
             Actividades_Diarias = new ObservableCollection<actividad_diaria>();
             CargarActividadesPorUsuario(usuario);
+            Usuario = usuario;
         }
 
         string apiUrl = "https://organizacion-personal.onrender.com/api/v1/actividad_diaria/";
@@ -47,38 +49,99 @@ namespace organizacion_personal.vistas
                                 await DisplayAlert("Mensaje", responseObject.Mensaje, "Aceptar");
                             }
 
-                            if (responseObject.actividadesDiarias.Count > 0)
+                            var headerStackLayout = new StackLayout
                             {
-                                var tableSection = new TableSection("Lista de tus Actividades");
-
-                                foreach (var actividad in responseObject.actividadesDiarias)
-                                {
-                                    var viewCell = new ViewCell
+                                Orientation = StackOrientation.Horizontal,
+                                Padding = new Thickness(10, 0, 10, 0),
+                                Children =
                                     {
-                                        View = new StackLayout
-                                        {
-                                            Orientation = StackOrientation.Horizontal,
-                                            Padding = new Thickness(10, 0, 10, 0),
-                                            Children =
+                                        new Label { Text = "Secuencial", FontAttributes = FontAttributes.Bold },
+                                        new Label { Text = "Descripcion", FontAttributes = FontAttributes.Bold },
+                                        new Label { Text = "Fecha de Inicio", FontAttributes = FontAttributes.Bold },
+                                        new Label { Text = "Fecha de Fin", FontAttributes = FontAttributes.Bold },
+                                        new Label { Text = "Dia", FontAttributes = FontAttributes.Bold },
+                                        new Label { Text = "Estado", FontAttributes = FontAttributes.Bold }
+                                    }
+                            };
+
+                            var headerFrame = new Frame
+                            {
+                                Content = headerStackLayout,
+                                BorderColor = Color.Black,
+                                Padding = new Thickness(5)
+                            };
+
+                            var tableSection = new TableSection("")
+                            {
+                                new ViewCell { View = headerFrame } // Agregar encabezados
+                            };
+
+                            if (responseObject.actividades_diarias.Count > 0)
+                            {
+
+                                foreach (var actividad in responseObject.actividades_diarias)
+                                {
+                                    var rowStackLayout = new StackLayout
+                                    {
+                                        Orientation = StackOrientation.Horizontal,
+                                        Padding = new Thickness(10, 0, 10, 0),
+                                        Children =
+                                            {
+                                                new Frame
                                                 {
-                                                    new Label { Text = actividad.ad_secuencial+"" },
-                                                    new Label { Text = actividad.ad_descripcion },
-                                                    new Label { Text = actividad.ad_hora_inicio },
-                                                    new Label { Text = actividad.ad_hora_fin },
-                                                    new Label { Text = actividad.ad_dia },
-                                                    new Label { Text = actividad.ad_estado }
+                                                    Content = new Label { Text = actividad.ad_secuencial+"" },
+                                                    BorderColor = Color.Black,
+                                                    Padding = new Thickness(5)
+                                                },
+                                                new Frame
+                                                {
+                                                    Content = new Label { Text = actividad.ad_descripcion },
+                                                    BorderColor = Color.Black,
+                                                    Padding = new Thickness(5)
+                                                },
+                                                new Frame
+                                                {
+                                                    Content = new Label { Text = actividad.ad_hora_inicio },
+                                                    BorderColor = Color.Black,
+                                                    Padding = new Thickness(5)
+                                                },
+                                                new Frame
+                                                {
+                                                    Content = new Label { Text = actividad.ad_hora_fin },
+                                                    BorderColor = Color.Black,
+                                                    Padding = new Thickness(5)
+                                                },
+                                                new Frame
+                                                {
+                                                    Content = new Label { Text = actividad.ad_dia },
+                                                    BorderColor = Color.Black,
+                                                    Padding = new Thickness(5)
+                                                },
+                                                new Frame
+                                                {
+                                                    Content = new Label { Text = actividad.ad_estado },
+                                                    BorderColor = Color.Black,
+                                                    Padding = new Thickness(5)
                                                 }
-                                        }
+                                            }
                                     };
 
-                                    tableSection.Add(viewCell);
-                                }
+                                    var rowFrame = new Frame
+                                    {
+                                        Content = rowStackLayout,
+                                        BorderColor = Color.Black,
+                                        Padding = new Thickness(5)
+                                    };
+
+                                    var rowViewCell = new ViewCell { View = rowFrame };
+                                    tableSection.Add(rowViewCell); // Agregar filas
+                                };                                
 
                                 ActividadesTableView.Root.Add(tableSection);
                             }
-                            else if (responseObject.actividadDiaria != null)
+                            else if (responseObject.actividad_diaria != null)
                             {
-                                var tableSection = new TableSection();
+                                tableSection = new TableSection();
                                 var viewCell = new ViewCell
                                 {
                                     View = new StackLayout
@@ -87,12 +150,12 @@ namespace organizacion_personal.vistas
                                         Padding = new Thickness(10, 0, 10, 0),
                                         Children =
                                             {
-                                                new Label { Text = responseObject.actividadDiaria.ad_secuencial+"" },
-                                                new Label { Text = responseObject.actividadDiaria.ad_descripcion },
-                                                new Label { Text = responseObject.actividadDiaria.ad_hora_inicio },
-                                                new Label { Text = responseObject.actividadDiaria.ad_hora_fin },
-                                                new Label { Text = responseObject.actividadDiaria.ad_dia },
-                                                new Label { Text = responseObject.actividadDiaria.ad_estado }
+                                                new Label { Text = responseObject.actividad_diaria.ad_secuencial+"" },
+                                                new Label { Text = responseObject.actividad_diaria.ad_descripcion },
+                                                new Label { Text = responseObject.actividad_diaria.ad_hora_inicio },
+                                                new Label { Text = responseObject.actividad_diaria.ad_hora_fin },
+                                                new Label { Text = responseObject.actividad_diaria.ad_dia },
+                                                new Label { Text = responseObject.actividad_diaria.ad_estado }
                                             }
                                     }
                                 };
@@ -102,7 +165,7 @@ namespace organizacion_personal.vistas
                             }
                             else
                             {
-                                await DisplayAlert("Error", "No se encontraron actividades en la respuesta JSON."+responseObject.actividadesDiarias.Count+responseObject.actividadDiaria.ad_descripcion, "Aceptar");
+                                await DisplayAlert("Error", "No se encontraron actividades en la respuesta JSON."+responseObject.actividades_diarias.Count+responseObject.actividad_diaria.ad_descripcion, "Aceptar");
                             }
                         }
                         else
@@ -128,7 +191,7 @@ namespace organizacion_personal.vistas
         {
             try
             {
-                var paginaPrincipal = new pagina_principal();
+                var paginaPrincipal = new pagina_principal(this.Usuario);
                 await Navigation.PushAsync(paginaPrincipal);
             }
             catch (Exception ex)

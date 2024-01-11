@@ -13,14 +13,37 @@
                             <TableRoot>
                                 <TableSection Title="Lista de Actividades">
                                     <ViewCell>
-                                        <StackLayout Orientation="Horizontal" Padding="10,0,10,0">
-                                            <Label Text="Secuencial" FontAttributes="Bold" />
-                                            <Label Text="Descripcion" FontAttributes="Bold" />
-                                            <Label Text="Fecha de Inicio" FontAttributes="Bold" />
-                                            <Label Text="Fecha de Fin" FontAttributes="Bold" />
-                                            <Label Text="Dia" FontAttributes="Bold" />
-                                            <Label Text="Estado" FontAttributes="Bold" />
-                                        </StackLayout>
+                                        <Grid>
+                                            <Grid>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="Auto" />
+                                                    <ColumnDefinition Width="Auto" />
+                                                    <ColumnDefinition Width="Auto" />
+                                                    <ColumnDefinition Width="Auto" />
+                                                    <ColumnDefinition Width="Auto" />
+                                                    <ColumnDefinition Width="Auto" />
+                                                </Grid.ColumnDefinitions>
+
+                                                <Frame Grid.Column="0" BorderColor="Black" Padding="5">
+                                                    <Label Text="Secuencial" FontAttributes="Bold" />
+                                                </Frame>
+                                                <Frame Grid.Column="1" BorderColor="Black" Padding="5">
+                                                    <Label Text="Descripcion" FontAttributes="Bold" />
+                                                </Frame>
+                                                <Frame Grid.Column="2" BorderColor="Black" Padding="5">
+                                                    <Label Text="Fecha de Inicio" FontAttributes="Bold" />
+                                                </Frame>
+                                                <Frame Grid.Column="3" BorderColor="Black" Padding="5">
+                                                    <Label Text="Fecha de Fin" FontAttributes="Bold" />
+                                                </Frame>
+                                                <Frame Grid.Column="4" BorderColor="Black" Padding="5">
+                                                    <Label Text="Dia" FontAttributes="Bold" />
+                                                </Frame>
+                                                <Frame Grid.Column="5" BorderColor="Black" Padding="5">
+                                                    <Label Text="Estado" FontAttributes="Bold" />
+                                                </Frame>
+                                            </Grid>
+                                        </Grid>
                                     </ViewCell>
                                 </TableSection>
                             </TableRoot>

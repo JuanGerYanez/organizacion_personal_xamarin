@@ -30,13 +30,13 @@
     <AppXManifest Include="D:\Organizacion Diaria\Xamarin\organizacion_personal\organizacion_personal\organizacion_personal.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-01-11T04:39:17.075</Modified>
+      <Modified>2024-01-11T08:20:53.833</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Organizacion Diaria\Xamarin\organizacion_personal\organizacion_personal\organizacion_personal.UWP\bin\x86\Debug\organizacion_personal.UWP.exe">
       <PackagePath>entrypoint\organizacion_personal.UWP.exe</PackagePath>
-      <Modified>2024-01-11T04:12:27.315</Modified>
+      <Modified>2024-01-11T08:15:03.419</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jgyan\.nuget\packages\newtonsoft.json\13.0.3\lib\netstandard2.0\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
@@ -72,7 +72,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Organizacion Diaria\Xamarin\organizacion_personal\organizacion_personal\organizacion_personal\bin\Debug\netstandard2.0\organizacion_personal.dll">
       <PackagePath>organizacion_personal.dll</PackagePath>
-      <Modified>2024-01-11T04:39:00.174</Modified>
+      <Modified>2024-01-11T08:20:28.953</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jgyan\.nuget\packages\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
@@ -231,11 +231,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Organizacion Diaria\Xamarin\organizacion_personal\organizacion_personal\organizacion_personal.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2024-01-11T04:39:13.818</Modified>
+      <Modified>2024-01-11T08:20:49.209</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Organizacion Diaria\Xamarin\organizacion_personal\organizacion_personal\organizacion_personal.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2024-01-11T04:39:13.818</Modified>
+      <Modified>2024-01-11T08:20:49.209</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.22000.0\\redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -255,7 +255,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Organizacion Diaria\Xamarin\organizacion_personal\organizacion_personal\organizacion_personal.UWP\bin\x86\Debug\Core\organizacion_personal.UWP.exe">
       <PackagePath>organizacion_personal.UWP.exe</PackagePath>
-      <Modified>2024-01-11T04:39:17.068</Modified>
+      <Modified>2024-01-11T08:20:53.825</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

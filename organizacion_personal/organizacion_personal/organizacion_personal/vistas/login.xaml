@@ -14,7 +14,7 @@
         <StackLayout>
             <Frame BorderColor="Black" CornerRadius="5" Padding="10" 
                    VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" 
-                   HeightRequest="300" WidthRequest="400">
+                   HeightRequest="350" WidthRequest="400">
                 <ContentView>
                     <StackLayout>
                         <Label x:Name="lblInicioSesion" Text="Iniciar Sesión" 
@@ -23,7 +23,8 @@
                         <Entry x:Name="txtPassword" Placeholder="Contraseña" IsPassword="True"></Entry>
                         
                         <Button x:Name="cmdLogin" Text="Login" Clicked="cmdLogin_Clicked" ></Button>
-
+                        <Label x:Name="lblmessage" Text="Si es la primera vez que ejecuta esta aplicacion, recuerde que puede demorar hasta 2min en hacer login, ya que es el API esta publicada en un servicio gratuito" 
+                               FontSize="12" HorizontalOptions="CenterAndExpand"/>
                     </StackLayout>
                 </ContentView>
             </Frame>

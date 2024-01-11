@@ -49,7 +49,7 @@ namespace organizacion_personal.vistas
 
                     var queryParams = 
                         $"?ad_descripcion={Uri.EscapeDataString(ad.ad_descripcion)}" +
-                        $"&ad_hora_inicio=${ Uri.EscapeDataString(ad.ad_hora_inicio)}" +
+                        $"&ad_hora_inicio={ Uri.EscapeDataString(ad.ad_hora_inicio)}" +
                         $"&ad_hora_fin={Uri.EscapeDataString(ad.ad_hora_fin)}" +
                         $"&ad_dia={Uri.EscapeDataString(ad.ad_dia)}" +
                         $"&ad_usuario={Uri.EscapeDataString(ad.ad_usuario)}" ;
@@ -61,22 +61,24 @@ namespace organizacion_personal.vistas
                         var jsonResponse = await response.Content.ReadAsStringAsync();
                         var responseObject = JsonConvert.DeserializeObject<ApiResponse>(jsonResponse);
 
-                        lblMensaje.Text = $"{responseObject.Mensaje}, " +
-                                          $"Secuencial: {responseObject.actividadDiaria.ad_secuencial}, " +
-                                          $"Descripcion: {responseObject.actividadDiaria.ad_descripcion}, " +
-                                          $"Hora de inicio: {responseObject.actividadDiaria.ad_hora_inicio}, " +
-                                          $"Hora de fin: {responseObject.actividadDiaria.ad_hora_fin}, " +
-                                          $"Estado: {responseObject.actividadDiaria.ad_estado}";
+                        await DisplayAlert(
+                            $"{responseObject.Mensaje}",
+                            $"Secuencial: {responseObject.actividad_diaria.ad_secuencial}\n " +
+                            $"Descripcion: {responseObject.actividad_diaria.ad_descripcion}\n " +
+                            $"Hora de inicio: {responseObject.actividad_diaria.ad_hora_inicio}\n " +
+                            $"Hora de fin: {responseObject.actividad_diaria.ad_hora_fin}\n " +
+                            $"Estado: {responseObject.actividad_diaria.ad_estado}", "Aceptar");
+
                     }
                     else
                     {
-                        lblMensaje.Text = $"Error al crear el libro. Código de estado: {response.StatusCode}";
+                        await DisplayAlert("Error en ejecucion", $"Error al crear la actividad.\nCódigo de estado: {response.StatusCode}", "Aceptar");
                     }
                 }
             }
             catch (Exception ex)
             {
-                lblMensaje.Text = $"Error: {ex.Message}\nDetalles: {ex.StackTrace}";
+                await DisplayAlert("Error en ejecucion", $"Error: {ex.Message}\nDetalles: {ex.StackTrace}", "Aceptar");
             }
         }
 
@@ -101,9 +103,9 @@ namespace organizacion_personal.vistas
 
                     var requestBody = new
                     {
-                        ad_descripcion = ad.ad_descripcion,
-                        ad_hora_inicio = ad.ad_hora_inicio,
-                        ad_hora_fin = ad.ad_hora_fin
+                        descripcion = ad.ad_descripcion,
+                        hora_inicio = ad.ad_hora_inicio,
+                        hora_fin = ad.ad_hora_fin
                     };
 
                     var jsonBody = JsonConvert.SerializeObject(requestBody);
@@ -114,26 +116,25 @@ namespace organizacion_personal.vistas
                     if (response.IsSuccessStatusCode)
                     {
                         var jsonResponse = await response.Content.ReadAsStringAsync();
-                        var responseObject = JsonConvert.DeserializeObject<ApiResponse_>(jsonResponse);
+                        var responseObject = JsonConvert.DeserializeObject<ApiResponse>(jsonResponse);
 
-                        lblMensaje.Text = $"{responseObject.Mensaje}, " +
-                                          $"Secuencial: {responseObject.actividadDiaria.ad_secuencial}, " +
-                                          $"Descripcion: {responseObject.actividadDiaria.ad_descripcion}, " +
-                                          $"Hora de inicio: {responseObject.actividadDiaria.ad_hora_inicio}, " +
-                                          $"Hora de fin: {responseObject.actividadDiaria.ad_hora_fin}, " +
-                                          $"Estado: {responseObject.actividadDiaria.ad_estado}";
+                        await DisplayAlert(
+                            $"{responseObject.Mensaje}",
+                            $"Secuencial: {responseObject.actividad_diaria.ad_secuencial}\n " +
+                            $"Descripcion: {responseObject.actividad_diaria.ad_descripcion}\n " +
+                            $"Hora de inicio: {responseObject.actividad_diaria.ad_hora_inicio}\n " +
+                            $"Hora de fin: {responseObject.actividad_diaria.ad_hora_fin}\n " +
+                            $"Estado: {responseObject.actividad_diaria.ad_estado}", "Aceptar");
                     }
                     else
                     {
-                        var errorResponse = await response.Content.ReadAsStringAsync();
-                        lblMensaje.Text = $"Error al actualizar la actividad. Código de estado: {response.StatusCode}, " +
-                                          $"Detalles: {errorResponse}";
+                        await DisplayAlert("Error en ejecucion", $"Error al actualizar la actividad.\nCódigo de estado: {response.StatusCode}\nContenido de la respuesta: {await response.Content.ReadAsStringAsync()}", "Aceptar");
                     }
                 }
             }
             catch (Exception ex)
             {
-                lblMensaje.Text = $"Error: {ex.Message}";
+                await DisplayAlert("Error en ejecucion", $"Error: {ex.Message}\nDetalles: {ex.StackTrace}", "Aceptar");
             }
         }
 
@@ -165,12 +166,13 @@ namespace organizacion_personal.vistas
                         var jsonResponse = await response.Content.ReadAsStringAsync();
                         var responseObject = JsonConvert.DeserializeObject<ApiResponse>(jsonResponse);
 
-                        lblMensaje.Text = $"{responseObject.Mensaje}, " +
-                                          $"Secuencial: {responseObject.actividadDiaria.ad_secuencial}, " +
-                                          $"Descripcion: {responseObject.actividadDiaria.ad_descripcion}, " +
-                                          $"Hora de inicio: {responseObject.actividadDiaria.ad_hora_inicio}, " +
-                                          $"Hora de fin: {responseObject.actividadDiaria.ad_hora_fin}, " +
-                                          $"Estado: {responseObject.actividadDiaria.ad_estado}";
+                        await DisplayAlert(
+                            $"{responseObject.Mensaje}",
+                            $"Secuencial: {responseObject.actividad_diaria.ad_secuencial}\n " +
+                            $"Descripcion: {responseObject.actividad_diaria.ad_descripcion}\n " +
+                            $"Hora de inicio: {responseObject.actividad_diaria.ad_hora_inicio}\n " +
+                            $"Hora de fin: {responseObject.actividad_diaria.ad_hora_fin}\n " +
+                            $"Estado: {responseObject.actividad_diaria.ad_estado}", "Aceptar");
 
                         ad_secuencial_.Text = "";
                         ad_descripcion_.Text = "";
@@ -180,15 +182,13 @@ namespace organizacion_personal.vistas
                     }
                     else
                     {
-                        var errorResponse = await response.Content.ReadAsStringAsync();
-                        lblMensaje.Text = $"Error al eliminar la actividad. Código de estado: {response.StatusCode}, " +
-                                          $"Detalles: {errorResponse}";
+                        await DisplayAlert("Error en ejecucion", $"Error al eliminar la actividad.\nCódigo de estado: {response.StatusCode}", "Aceptar");
                     }
                 }
             }
             catch (Exception ex)
             {
-                lblMensaje.Text = $"Error: {ex.Message}";
+                await DisplayAlert("Error en ejecucion", $"Error: {ex.Message}\nDetalles: {ex.StackTrace}", "Aceptar");
             }
         }
 
