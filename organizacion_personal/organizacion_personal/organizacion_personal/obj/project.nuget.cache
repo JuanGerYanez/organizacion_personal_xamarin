@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "zx8frMT1vMD6g2tv30FycasM9gYHdageQ1CFth/omKkB8x9NkqMiW5/5DrqM+LBN2ExFNBwXVHiT/A585krOLA==",
+  "success": true,
+  "projectFilePath": "D:\\Organizacion Diaria\\Xamarin\\organizacion_personal\\organizacion_personal\\organizacion_personal\\organizacion_personal.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jgyan\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\jgyan\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\jgyan\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\jgyan\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\jgyan\\.nuget\\packages\\xamarin.essentials\\1.8.1\\xamarin.essentials.1.8.1.nupkg.sha512",
+    "C:\\Users\\jgyan\\.nuget\\packages\\xamarin.forms\\5.0.0.2622\\xamarin.forms.5.0.0.2622.nupkg.sha512"
+  ],
+  "logs": []
+}

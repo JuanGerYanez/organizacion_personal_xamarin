@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="organizacion_personal.vistas.pagina_lista_actividades">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame Padding="25" 
+                   VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" 
+                   WidthRequest="500">
+                <ContentView>
+                    <StackLayout>
+                        <TableView x:Name="ActividadesTableView" Intent="Form">
+                            <TableRoot>
+                                <TableSection Title="Lista de Actividades">
+                                    <ViewCell>
+                                        <StackLayout Orientation="Horizontal" Padding="10,0,10,0">
+                                            <Label Text="Secuencial" FontAttributes="Bold" />
+                                            <Label Text="Descripcion" FontAttributes="Bold" />
+                                            <Label Text="Fecha de Inicio" FontAttributes="Bold" />
+                                            <Label Text="Fecha de Fin" FontAttributes="Bold" />
+                                            <Label Text="Dia" FontAttributes="Bold" />
+                                            <Label Text="Estado" FontAttributes="Bold" />
+                                        </StackLayout>
+                                    </ViewCell>
+                                </TableSection>
+                            </TableRoot>
+                        </TableView>
+                        <Button x:Name="cmdRegresar" Text="Regresar" Clicked="cmdRegresar_Clicked"></Button>
+                    </StackLayout>
+                </ContentView>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

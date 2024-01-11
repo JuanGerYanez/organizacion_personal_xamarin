@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="organizacion_personal.vistas.pagina_principal">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame Padding="25" 
+                   VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" 
+                   WidthRequest="500">
+                <ContentView>
+                    <StackLayout>
+                        <Label Text="Actividades Diarias" HorizontalOptions="CenterAndExpand" 
+                                FontSize="Title"/>
+
+                        <Label x:Name="lblMensaje" 
+                               Text="" FontSize="10" 
+                               Padding="30,0,30,0"/>
+                        
+                        <Entry x:Name="ad_secuencial_" Placeholder="ID" ></Entry>
+
+                        <Entry x:Name="ad_descripcion_" Placeholder="Describe tu actividad..." ></Entry>
+
+                        <Entry x:Name="ad_hora_inicio_" Placeholder="Hora de inicio (HH:MM ejm: 00:00)" ></Entry>
+
+                        <Entry x:Name="ad_hora_fin_" Placeholder="Hora de fin (HH:MM ejm: 23:59)" ></Entry>
+
+                        <Entry x:Name="ad_dia_" Placeholder="Dia (Iniciales ejm: Lunes = L)" ></Entry>
+
+                        <Button Text="Insertar"  Clicked="cmdInsert_Clicked" ></Button>
+                        <Button Text="Modificar" Clicked="cmdUpdate_Clicked"></Button>
+                        <Button Text="Leer" Clicked="cmdReadByUser_Clicked"></Button>
+                        <Button Text="Eliminar" Clicked="cmdDelete_Clicked"></Button>
+
+                        <Button x:Name="cmdCerrarSesion" Text="Cerrar Sesión" Clicked="cmdCerrarSesion_Clicked"></Button>
+                    </StackLayout>
+                </ContentView>
+            </Frame>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

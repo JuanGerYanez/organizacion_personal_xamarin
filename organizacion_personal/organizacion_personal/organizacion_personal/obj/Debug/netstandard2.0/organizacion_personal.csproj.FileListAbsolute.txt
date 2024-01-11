@@ -1,0 +1,34 @@
+C:\Users\jgyan\OneDrive - Universidad Tecnica del Norte\7MO SEMESTRE\APLICACIONES MOVILES\Organizacion Diaria\Xamarin\organizacion_personal\organizacion_personal\organizacion_personal\obj\Debug\netstandard2.0\organizacion_personal.csproj.AssemblyReference.cache
+C:\Users\jgyan\OneDrive - Universidad Tecnica del Norte\7MO SEMESTRE\APLICACIONES MOVILES\Organizacion Diaria\Xamarin\organizacion_personal\organizacion_personal\organizacion_personal\obj\Debug\netstandard2.0\organizacion_personal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jgyan\OneDrive - Universidad Tecnica del Norte\7MO SEMESTRE\APLICACIONES MOVILES\Organizacion Diaria\Xamarin\organizacion_personal\organizacion_personal\organizacion_personal\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\jgyan\OneDrive - Universidad Tecnica del Norte\7MO SEMESTRE\APLICACIONES MOVILES\Organizacion Diaria\Xamarin\organizacion_personal\organizacion_personal\organizacion_personal\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\jgyan\OneDrive - Universidad Tecnica del Norte\7MO SEMESTRE\APLICACIONES MOVILES\Organizacion Diaria\Xamarin\organizacion_personal\organizacion_personal\organizacion_personal\obj\Debug\netstandard2.0\organizacion_personal.AssemblyInfoInputs.cache
+C:\Users\jgyan\OneDrive - Universidad Tecnica del Norte\7MO SEMESTRE\APLICACIONES MOVILES\Organizacion Diaria\Xamarin\organizacion_personal\organizacion_personal\organizacion_personal\obj\Debug\netstandard2.0\organizacion_personal.AssemblyInfo.cs
+C:\Users\jgyan\OneDrive - Universidad Tecnica del Norte\7MO SEMESTRE\APLICACIONES MOVILES\Organizacion Diaria\Xamarin\organizacion_personal\organizacion_personal\organizacion_personal\obj\Debug\netstandard2.0\organizacion_personal.csproj.CoreCompileInputs.cache
+C:\Users\jgyan\OneDrive - Universidad Tecnica del Norte\7MO SEMESTRE\APLICACIONES MOVILES\Organizacion Diaria\Xamarin\organizacion_personal\organizacion_personal\organizacion_personal\obj\Debug\netstandard2.0\organizacion_personal.dll
+C:\Users\jgyan\OneDrive - Universidad Tecnica del Norte\7MO SEMESTRE\APLICACIONES MOVILES\Organizacion Diaria\Xamarin\organizacion_personal\organizacion_personal\organizacion_personal\obj\Debug\netstandard2.0\refint\organizacion_personal.dll
+C:\Users\jgyan\OneDrive - Universidad Tecnica del Norte\7MO SEMESTRE\APLICACIONES MOVILES\Organizacion Diaria\Xamarin\organizacion_personal\organizacion_personal\organizacion_personal\obj\Debug\netstandard2.0\organizacion_personal.pdb
+C:\Users\jgyan\OneDrive - Universidad Tecnica del Norte\7MO SEMESTRE\APLICACIONES MOVILES\Organizacion Diaria\Xamarin\organizacion_personal\organizacion_personal\organizacion_personal\bin\Debug\netstandard2.0\organizacion_personal.deps.json
+C:\Users\jgyan\OneDrive - Universidad Tecnica del Norte\7MO SEMESTRE\APLICACIONES MOVILES\Organizacion Diaria\Xamarin\organizacion_personal\organizacion_personal\organizacion_personal\bin\Debug\netstandard2.0\organizacion_personal.dll
+C:\Users\jgyan\OneDrive - Universidad Tecnica del Norte\7MO SEMESTRE\APLICACIONES MOVILES\Organizacion Diaria\Xamarin\organizacion_personal\organizacion_personal\organizacion_personal\bin\Debug\netstandard2.0\ref\organizacion_personal.dll
+C:\Users\jgyan\OneDrive - Universidad Tecnica del Norte\7MO SEMESTRE\APLICACIONES MOVILES\Organizacion Diaria\Xamarin\organizacion_personal\organizacion_personal\organizacion_personal\bin\Debug\netstandard2.0\organizacion_personal.pdb
+C:\Users\jgyan\OneDrive - Universidad Tecnica del Norte\7MO SEMESTRE\APLICACIONES MOVILES\Organizacion Diaria\Xamarin\organizacion_personal\organizacion_personal\organizacion_personal\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\jgyan\OneDrive - Universidad Tecnica del Norte\7MO SEMESTRE\APLICACIONES MOVILES\Organizacion Diaria\Xamarin\organizacion_personal\organizacion_personal\organizacion_personal\obj\Debug\netstandard2.0\login.xaml.g.cs
+D:\Organizacion Diaria\Xamarin\organizacion_personal\organizacion_personal\organizacion_personal\bin\Debug\netstandard2.0\organizacion_personal.deps.json
+D:\Organizacion Diaria\Xamarin\organizacion_personal\organizacion_personal\organizacion_personal\bin\Debug\netstandard2.0\organizacion_personal.dll
+D:\Organizacion Diaria\Xamarin\organizacion_personal\organizacion_personal\organizacion_personal\bin\Debug\netstandard2.0\ref\organizacion_personal.dll
+D:\Organizacion Diaria\Xamarin\organizacion_personal\organizacion_personal\organizacion_personal\bin\Debug\netstandard2.0\organizacion_personal.pdb
+D:\Organizacion Diaria\Xamarin\organizacion_personal\organizacion_personal\organizacion_personal\obj\Debug\netstandard2.0\organizacion_personal.csproj.AssemblyReference.cache
+D:\Organizacion Diaria\Xamarin\organizacion_personal\organizacion_personal\organizacion_personal\obj\Debug\netstandard2.0\organizacion_personal.GeneratedMSBuildEditorConfig.editorconfig
+D:\Organizacion Diaria\Xamarin\organizacion_personal\organizacion_personal\organizacion_personal\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\Organizacion Diaria\Xamarin\organizacion_personal\organizacion_personal\organizacion_personal\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+D:\Organizacion Diaria\Xamarin\organizacion_personal\organizacion_personal\organizacion_personal\obj\Debug\netstandard2.0\organizacion_personal.AssemblyInfoInputs.cache
+D:\Organizacion Diaria\Xamarin\organizacion_personal\organizacion_personal\organizacion_personal\obj\Debug\netstandard2.0\organizacion_personal.AssemblyInfo.cs
+D:\Organizacion Diaria\Xamarin\organizacion_personal\organizacion_personal\organizacion_personal\obj\Debug\netstandard2.0\organizacion_personal.csproj.CoreCompileInputs.cache
+D:\Organizacion Diaria\Xamarin\organizacion_personal\organizacion_personal\organizacion_personal\obj\Debug\netstandard2.0\XamlC.stamp
+D:\Organizacion Diaria\Xamarin\organizacion_personal\organizacion_personal\organizacion_personal\obj\Debug\netstandard2.0\organizacion_personal.dll
+D:\Organizacion Diaria\Xamarin\organizacion_personal\organizacion_personal\organizacion_personal\obj\Debug\netstandard2.0\refint\organizacion_personal.dll
+D:\Organizacion Diaria\Xamarin\organizacion_personal\organizacion_personal\organizacion_personal\obj\Debug\netstandard2.0\organizacion_personal.pdb
+D:\Organizacion Diaria\Xamarin\organizacion_personal\organizacion_personal\organizacion_personal\obj\Debug\netstandard2.0\vistas\login.xaml.g.cs
+D:\Organizacion Diaria\Xamarin\organizacion_personal\organizacion_personal\organizacion_personal\obj\Debug\netstandard2.0\vistas\pagina_principal.xaml.g.cs
+D:\Organizacion Diaria\Xamarin\organizacion_personal\organizacion_personal\organizacion_personal\obj\Debug\netstandard2.0\vistas\pagina_lista_actividades.xaml.g.cs

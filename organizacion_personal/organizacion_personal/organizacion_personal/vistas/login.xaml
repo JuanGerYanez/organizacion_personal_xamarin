@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="organizacion_personal.vistas.login">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="MyLabelStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="35" />
+                <Setter Property="Padding" Value="16" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BorderColor="Black" CornerRadius="5" Padding="10" 
+                   VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" 
+                   HeightRequest="300" WidthRequest="400">
+                <ContentView>
+                    <StackLayout>
+                        <Label x:Name="lblInicioSesion" Text="Iniciar Sesión" 
+                               Style="{StaticResource MyLabelStyle}" HorizontalOptions="CenterAndExpand"/>
+                        <Entry x:Name="txtUsername" Placeholder="Nombre de usuario" ></Entry>
+                        <Entry x:Name="txtPassword" Placeholder="Contraseña" IsPassword="True"></Entry>
+                        
+                        <Button x:Name="cmdLogin" Text="Login" Clicked="cmdLogin_Clicked" ></Button>
+
+                    </StackLayout>
+                </ContentView>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
